@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/high-angle-view-of-tokyo-skyline-at-dusk-japan-royalty-free-image-1664309926.jpg');
+    background-size: cover;
+    flex-direction: row;
+}
+
+.whole {
+    background: rgb(81, 159, 255);
+    color: white;
+    border-radius: 30px;
+    padding: 2em;
+    margin: 1em;
+    width: 100%;
+    max-width: 300px;
+    opacity: 0.85;
+    flex-direction: row;
+}
+
+.searchBar {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.2em;
+    width: calc(100%-100px);
+}
+
+.search {
+    border-radius: 50%;
+    border-radius: 30px;
+    height: 2em;
+    color: rgb(255, 0, 0);
+    background: rgb(255, 255, 255);
+    font-size: 80%;
+    margin: 1em;
+    padding: 1em;
+    font-family: inherit;
+    opacity: 0.95;
+}
+
+button {
+    font-size: 30px;
+    border-radius: 80%;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.1s;
+    outline: none;
+}
+
+.weather {
+    flex: 1;
+    margin: 1em;
+}
+
+.city-pic-container {
+    display: flex;
+}
+
+.city {
+    flex: 1;
+    text-align: left;
+    position: relative;
+    top: -25px;
+}
+
+img {
+    flex: 1;
+    text-align: right;
+    border-radius: 30%;
+}
+
+.temp-condition {
+    display: flex;
+}
+
+.temp {
+    flex: 1;
+    text-align: left;
+    position: relative;
+    bottom: 70px;
+}
+
+.condition {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.humidity {
+    flex: 1;
+    font-size: 120%;
+    position: relative;
+    bottom: 20px;
+}
+
+.wind {
+    position: relative;
+    bottom: 10px;
+    font-size: 120%;
+}
+
+.depression {
+    font-size: 120%;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+}
